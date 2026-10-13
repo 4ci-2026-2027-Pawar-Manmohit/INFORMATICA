@@ -28,7 +28,9 @@ public class Parcheggio{
         if(this.postiDisponibili > 0){
             this.postiDisponibili--;
             return true; //l'auto entra
-        }else{return false, //non entra, perchè non ci sono posti}
+        }else{
+            return false, //non entra, perchè non ci sono posti
+        }
     }
     public boolean esce(Car unaAutomobile, double ore){
         double costo;
